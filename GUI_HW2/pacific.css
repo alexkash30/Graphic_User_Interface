@@ -1,0 +1,111 @@
+/*
+File: pacific.css
+GUI Assignment: Style a Site with External CSS
+Alex Kashian, UMass Lowell Computer Science,
+akashian@student.uml.edu
+Copyright (c) 2023 by Alex Kashian. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AK on October 10th, 2023 at 9:18 PM
+*/
+
+header{
+	background-image: url('sunset.jpg');
+	background-repeat: no-repeat;
+	background-color: #000033;
+	background-position: right;
+	color: #FFFFFF;
+}
+body {
+	background-image: url(ptrbackground.jpg);
+	background-color: #00569f;
+	color: #272626;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.resort{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2da5e1;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+nav{
+	margin-left: 30px;
+	font-weight: bold;
+	padding-top: 20px;
+	width: 160px;
+	float: left;
+}
+
+nav ul {
+	padding-left: 0px;
+	margin: auto;
+	font-size: 1.2em;
+	font-weight: bold;
+	list-style-type: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav a:visited {
+	color: #344873;
+}
+
+nav a {
+	text-decoration: none;
+	color: #090971;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+	color: #2da5e1;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+#content ul{
+	list-style: inside url('marker.gif');
+}
+
+#wrapper{
+	margin: auto;
+	width: 80%;
+	background-color: #8cc6e3;
+	min-width: 600px;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 25px; 
+    background-color: #ffffff;
+	font-size: 20px; 
+}
+
+#content img {
+    float: left; 
+    padding-right: 25px;
+    margin-bottom: auto;
+}
+
+
+footer {
+	padding: 25px;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: #ffffff;
+	margin-left: 200px; 
+}
