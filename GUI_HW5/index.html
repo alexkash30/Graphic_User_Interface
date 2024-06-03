@@ -1,0 +1,60 @@
+<!-- File: index.html
+GUI Assignment: Style a Site with External CSS
+Alex Kashian, UMass Lowell Computer Science,
+akashian@student.uml.edu
+Copyright (c) 2023 by Alex Kashian. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AK on December 18th, 2023 at 10:18 PM 
+Worked alongside fellow classmates to complete this assignment
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Game</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="JS/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+</head>
+<body>
+    <!-- scrable logo as the hearder -->
+	<div id="logo">
+		<img src="imgs/Scrabble_American_logo.png" />
+	</div>
+    <!-- most of the display for the game it self including board, tiles, and tiles rack -->
+    <div id="game-container">
+        <div id="scrabble-board"></div>
+        <div id="tile_rack">
+            <div id="tile-rack"></div>
+        </div>
+    </div>
+
+    <!-- area to calculate leftover tiles till the game is over -->
+    <div id="tiles-left">
+        Tiles Left: <span id="tilesLeft">100</span>
+    </div>
+
+    <!-- Score display throughout the game -->
+    <div id="score-display">
+        Score: <span id="score">0</span>
+    </div>
+
+    <!-- for botton styling and functionality   -->
+    <div class="buttons">
+        <button type="button" id="submit">Submit Word</button>
+        <button type="button" id="reset">Reset Game</button>
+    </div>
+
+    <!-- rules and final score div. -->
+    <div id="final-score" style="letter-spacing: -1px; color: #DFBF84; text-transform: uppercase; text-shadow: 1px 1px 0 #000; margin-top: 50px; text-align: center; line-height: 50px;"></div>
+	<div class="rules" id="rules">
+		<h1><a href="https://www.scrabblepages.com/scrabble/rules/">Click Here For Rules!</a></h1>
+	</div>
+</body>
+</html>

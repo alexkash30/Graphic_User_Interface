@@ -1,0 +1,241 @@
+/* File: style.css
+GUI Assignment: Style a Site with External CSS
+Alex Kashian, UMass Lowell Computer Science,
+akashian@student.uml.edu
+Copyright (c) 2023 by Alex Kashian. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AK on December 18th, 2023 at 10:18 PM 
+Worked alongside fellow classmates to complete this assignment
+*/
+
+	#game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid green;
+	border-radius: 50px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 50px;
+	padding-bottom: 25px;
+	width: fit-content; 
+	height: fit-content; 
+	background: linear-gradient(to right, tan,gray);  
+}
+  
+	#scrabble-board {
+	background-image: url("../imgs/Scrabble_Board_OneLine.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	background-position: center center;
+	width: 1260px;
+	margin: auto;
+	padding-top: 25px;
+	padding-left: 142px;
+  }
+  
+  #tile_rack {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  body {
+	background-color: tan;
+  }
+  
+  #tile-rack {
+	background-image: url("../imgs/scrabble-tile-holder-406774_640.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 110%;
+	margin-top: 25px;
+	border: 2px solid black;
+  }
+  
+  #score-display{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+  }
+  
+  .placement {
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-top: 2px;
+	margin-left:2px;
+	border: 1px solid transparent;
+  }
+
+  /* button styling */
+  .buttons {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	margin-top: 25px;
+  }
+  
+  #submit{
+	background: #04552d;
+	color: black;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-right:20px;
+	border: 0;
+  }
+  #reset{
+	background: #f02930;
+	color: black;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-right:20px;
+	border: 0;
+  }
+  
+  
+  #tiles-left{
+	margin-left:auto;
+	margin-top: 20px;
+	margin-right:auto;
+	text-align: center;
+	font-size: 30px;
+  }
+  
+
+  .tile {
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+  }
+  
+  #logo {
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: auto;
+	
+  }
+
+  /* had to set the background for each tile after making them so they dont blend into the rack */
+  .A {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_A.jpg");
+	background-size: cover;
+  }
+  .B {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_B.jpg");
+	background-size: cover;
+  }
+  .C {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_C.jpg");
+	background-size: cover;
+  }
+  .D {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_D.jpg");
+	background-size: cover;
+  }
+  .E {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_E.jpg");
+	background-size: cover;
+  }
+  .F {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_F.jpg");
+	background-size: cover;
+  }
+  .G {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_G.jpg");
+	background-size: cover;
+  }
+  .H {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_H.jpg");
+	background-size: cover;
+  }
+  .I {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_I.jpg");
+	background-size: cover;
+  }
+  .J {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_J.jpg");
+	background-size: cover;
+  }
+  .K {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_K.jpg");
+	background-size: cover;
+  }
+  .L {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_L.jpg");
+	background-size: cover;
+  }
+  .M {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_M.jpg");
+	background-size: cover;
+  }
+  .N {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_N.jpg");
+	background-size: cover;
+  }
+  .O {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_O.jpg");
+	background-size: cover;
+  }
+  .P {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_P.jpg");
+	background-size: cover;
+  }
+  .Q {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_Q.jpg");
+	background-size: cover;
+  }
+  .R {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_R.jpg");
+	background-size: cover;
+  }
+  .S {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_S.jpg");
+	background-size: cover;
+  }
+  .T {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_T.jpg");
+	background-size: cover;
+  }
+  .U {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_U.jpg");
+	background-size: cover;
+  }
+  .V {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_V.jpg");
+	background-size: cover;
+  }
+  .W {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_W.jpg");
+	background-size: cover;
+  }
+  .X {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_X.jpg");
+	background-size: cover;
+  }
+  .Y {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_Y.jpg");
+	background-size: cover;
+  }
+  .Z {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_Z.jpg");
+	background-size: cover;
+  }
+  ._ {
+	background: url("../imgs/Scrabble_Tiles/Scrabble_Tile_Blank.jpg");
+	background-size: cover;
+  }
