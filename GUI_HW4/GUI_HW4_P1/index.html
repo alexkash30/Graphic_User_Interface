@@ -1,0 +1,62 @@
+<!-- File: Index.html
+GUI Assignment: Style a Site with External CSS
+Alex Kashian, UMass Lowell Computer Science,
+akashian@student.uml.edu
+Copyright (c) 2023 by Alex Kashian. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AK on December 4th, 2023 at 10:18 PM -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="CSS/style.css">
+	<script src="JS/add-content.js"></script>
+	
+
+  </head>
+
+  <body>
+	<!-- header -->
+	<div class = header>
+		<h1>Multiplication Table</h1>
+	</div>
+	
+
+	<div class = "container">
+		<div class="box1">
+			<div class="enterVals">
+				<p>Please Enter 4 Values In The Range of -50 to 50</p>
+			
+				<!-- form that has the input fields for the users -->
+				<form id="myForm">
+					<label for = "minCol">Min Column Value:</label><br>
+					<input type="number" name="minCol" id="minCol" ><br>
+
+					<label for = "maxCol">Max Column Value:</label><br>
+					<input type="number" name="maxCol" id="maxCol" ><br>
+
+					<label for = "minRow">Min Row Value:</label><br>
+					<input type="number" name="minRow" id="minRow" ><br>
+
+					<label for = "maxRow">Max Row Value:</label><br>
+					<input type="number" name="maxRow" id="maxRow" ><br>
+					<span id="errorMessage"></span><br>
+					<!-- button running the onclick function -->
+					<input type="button" onclick="myFunction()" value="Submit">
+				</form>
+			</div>
+		</div>
+
+		<!-- multiplication table itself -->
+		<div class="box2">
+				<table id = "myTable"></table>
+		</div>
+	</div>
+
+	</body>
+  
+</html>

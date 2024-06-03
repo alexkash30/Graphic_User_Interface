@@ -1,0 +1,121 @@
+/* File: c0.css
+GUI Assignment: Style a Site with External CSS
+Alex Kashian, UMass Lowell Computer Science,
+akashian@student.uml.edu
+Copyright (c) 2023 by Alex Kashian. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AK on December 4th, 2023 at 10:18 PM */
+
+* {
+	margin: 0;
+}
+
+/* setting background color for site */
+body {
+	background: linear-gradient(to right, red, purple);
+
+}
+
+.header{
+	font-family: "Lucida Console", "Courier New", monospace;
+	padding: 10px;
+	text-align: center;
+	border-bottom: dashed 5px rgb(15, 27, 116);
+}
+
+.container{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+  }
+
+/* setting up the left side of where the input feilds are */
+.box1{
+	border: dashed 5px rgb(15, 27, 116);
+	font-size: 20px; 
+	width: auto;
+	margin-bottom: auto;
+	margin-left: 30px;
+	max-width: 20%;
+}
+
+.enterVals{
+	box-sizing: border-box;
+	padding: 12px;
+	
+}
+
+/* table box setup  */
+.box2{
+    overflow: auto;
+    margin-bottom: auto;
+    width: auto;
+    margin-left: 50px;
+    max-width: 600px; 
+    max-height: 650px;
+    border: 5px solid transparent;
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+}
+
+
+.overflowFix{
+    overflow: auto;
+}
+
+.tabs{
+    overflow: auto;
+    margin-bottom: auto;
+    width: auto;
+    margin-left: 20px;
+    max-width: 600px; 
+    max-height: 615px;
+    border: 5px solid transparent;
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+}
+
+table {
+    background: linear-gradient(to right, red, purple);
+	color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: dashed 2px white;
+    padding: 20px;
+}
+
+/* This is to make the left most sticky*/
+td:first-child {
+	color: black;
+    position: sticky;
+    left: 0;
+    background-color: white;
+    border-right: dashed 2px white;
+    z-index: 2;
+}
+
+/* This is to make the top row sticky*/
+.header-cell {
+	color: black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.error{
+    color:blue
+}
+
+.tabs{
+    background: linear-gradient(to right, red, purple);
+    color:blue
+}
